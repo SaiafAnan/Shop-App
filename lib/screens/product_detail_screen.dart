@@ -36,6 +36,18 @@ class ProductsDetailScreen extends StatelessWidget {
               height: 10,
             ),
             Text(
+              loadedProduct.title,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Divider(),
+            Text(
               '\$${loadedProduct.price}',
               style: TextStyle(
                 color: Colors.grey,
@@ -45,6 +57,7 @@ class ProductsDetailScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
+            Divider(),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10),
               width: double.infinity,
